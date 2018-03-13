@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppPesoIdealIMC</string>
+    <string name="initial_page_title">Selecione uma opção:</string>
+    <string name="ideal_weight_man">Peso ideal homem</string>
+    <string name="ideal_weight_woman">Peso ideal mulher</string>
+    <string name="calculate_imc">Calcular IMC</string>
+    <string name="about">Sobre o app</string>
+    <string name="type_your_height">Digite sua altura:</string>
+    <string name="calculate">Calcular</string>
+</resources>

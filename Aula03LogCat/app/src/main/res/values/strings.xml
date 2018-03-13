@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aula03LogCat</string>
+    <string name="t1">Screen 1</string>
+    <string name="bt1">Go to screen 2</string>
+    <string name="t2">Screen 2</string>
+    <string name="bt2">Go to screen 1</string>
+    <string name="btd">Destroy screen 2</string>
+    <string name="btnav">Open Google</string>
+</resources>

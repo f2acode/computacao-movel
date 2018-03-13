@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="uam.com.br.apppesoidealimc.MainActivity">
+
+    <TextView
+        android:id="@+id/initial_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial_page_title"
+        android:textSize="35dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/ideal_weight_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ideal_weight_man"
+        android:layout_below="@+id/initial_page_title"
+        android:textSize="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="idealWeightMan"/>
+
+    <Button
+        android:id="@+id/ideal_weight_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ideal_weight_woman"
+        android:layout_below="@+id/ideal_weight_m"
+        android:textSize="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="idealWeightWoman"/>
+
+    <Button
+        android:id="@+id/calculate_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_imc"
+        android:layout_below="@+id/ideal_weight_w"
+        android:textSize="30dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="IMC"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate_imc"
+        android:text="@string/about"
+        android:textSize="30dp"
+        android:onClick="about"/>
+
+</RelativeLayout>
