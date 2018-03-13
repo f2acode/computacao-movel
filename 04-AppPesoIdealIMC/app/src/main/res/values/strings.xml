@@ -7,4 +7,13 @@
     <string name="about">Sobre o app</string>
     <string name="type_your_height">Digite sua altura:</string>
     <string name="calculate">Calcular</string>
+    <string name="result">Resultado</string>
+    <string name="tv_height_imc">Digite sua altura:</string>
+    <string name="tv_weight_imc">Digite seu peso:</string>
+    <string name="name_creator">Felipe Augusto de Almeida</string>
+    <string name="register_creator">20417054</string>
+    <string name="class_creator">Ciências da Computação</string>
+    <string name="font_creator">
+        http://www.calcularpesoideal.com.br/
+    </string>
 </resources>
