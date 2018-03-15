@@ -13,7 +13,6 @@
     <string name="name_creator">Felipe Augusto de Almeida</string>
     <string name="register_creator">20417054</string>
     <string name="class_creator">Ciências da Computação</string>
-    <string name="font_creator">
-        http://www.calcularpesoideal.com.br/
-    </string>
+    <string name="font_title"> Fonte das fórmulas: </string>
+    <string name="font">mdsaude.com</string>
 </resources>

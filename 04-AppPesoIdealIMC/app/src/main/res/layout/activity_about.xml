@@ -37,8 +37,16 @@
         android:id="@+id/about_font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/font_creator"
+        android:text="@string/font_title"
         android:layout_below="@+id/about_class"
         android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/about_font_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/font"
+        android:layout_below="@+id/about_font"
+        android:textSize="15dp"/>
 
 </RelativeLayout>

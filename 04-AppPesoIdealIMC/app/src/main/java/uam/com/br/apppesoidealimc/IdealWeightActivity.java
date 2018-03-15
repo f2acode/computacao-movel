@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.ObjectInputStream;
+import java.text.DecimalFormat;
 
 public class IdealWeightActivity extends AppCompatActivity {
 
@@ -29,15 +30,18 @@ public class IdealWeightActivity extends AppCompatActivity {
 
         double factor = intent.getDoubleExtra("factor", 0.0);
 
-        Log.i("factor", String.valueOf(factor));
-
         // get the height
         inputHeight = (EditText) findViewById(R.id.input_height);
-        double height = Double.valueOf(inputHeight.getText().toString());
-        Log.i("height", String.valueOf(height));
+        String stringHeight = inputHeight.getText().toString();
+
+        //format
+        stringHeight = stringHeight.replaceAll(",", "");
+        stringHeight = stringHeight.replaceAll("\\.", "");
+        double height = Double.valueOf(stringHeight);
+
         // calculate
         double weight = (height - 100.0) * factor;
-        Log.i("weight", String.valueOf(weight));
+
         // define the weight
         idealWeight = (TextView) findViewById(R.id.ideal_weight);
         idealWeight.setText(String.valueOf(weight));
