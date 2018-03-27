@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">05-ActivityForResultEEstados</string>
+    <string name="intentEstados">Intent estados</string>
+    <string name="intentNavegador">Intent navagador</string>
+    <string name="abrir">Abrir</string>
+    <string-array name="estados">
+        <item>Alagoas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Maranhão</item>
+        <item>Minas Gerais</item>
+        <item>Paraíba</item>
+        <item>Pernanbuco</item>
+        <item>Piauí</item>
+        <item>Rio de Janeiro</item>
+        <item>São Paulo</item>
+        <item>Sergipe</item>
+        <item>Rio Grande do Norte</item>
+    </string-array>
+</resources>
