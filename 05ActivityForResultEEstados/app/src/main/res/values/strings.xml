@@ -3,6 +3,8 @@
     <string name="intentEstados">Intent estados</string>
     <string name="intentNavegador">Intent navagador</string>
     <string name="abrir">Abrir</string>
+
+    <!-- estados para a list view -->
     <string-array name="estados">
         <item>Alagoas</item>
         <item>Bahia</item>
