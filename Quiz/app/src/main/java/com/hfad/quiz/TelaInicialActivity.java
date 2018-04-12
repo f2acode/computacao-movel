@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class TelaInicialActivity extends AppCompatActivity {
 
@@ -20,12 +21,19 @@ public class TelaInicialActivity extends AppCompatActivity {
 
     public void jogar(View view){
         EditText etNomeJogador = (EditText) findViewById(R.id.et_nome_jogador);
-        String nomeJogador = etNomeJogador.getText().toString();
 
-        Intent intentPerguntas = new Intent(this, PerguntasActivity.class);
-        intentPerguntas.putExtra("nomeJogador", nomeJogador);
+        if(etNomeJogador.getText().toString().isEmpty()){
+            Toast toast = Toast.
+                    makeText(this, "É necessário inserir um nome",Toast.LENGTH_SHORT);
+            toast.show();
+        }else{
+            String nomeJogador = etNomeJogador.getText().toString();
 
-        startActivity(intentPerguntas);
+            Intent intentPerguntas = new Intent(this, PerguntasActivity.class);
+            intentPerguntas.putExtra("nomeJogador", nomeJogador);
+
+            startActivity(intentPerguntas);
+        }
     }
 
     @Override

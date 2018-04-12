@@ -18,7 +18,7 @@ public class PerguntasActivity extends AppCompatActivity {
     String nomeJogador = "";
     List<PerguntaModel> perguntas = new ArrayList<PerguntaModel>();
     List<Integer> respostasJogador = new ArrayList<>();
-    int pontuacaoFinal = 0;
+    int pontuacaoFinal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,9 +64,11 @@ public class PerguntasActivity extends AppCompatActivity {
 
         // inserindo o texto para as alternativas
         RadioGroup rg_alternativas = (RadioGroup) findViewById(R.id.rg_alternativas);
-        Log.i("count", String.valueOf(rg_alternativas.getChildCount()));
+        Log.i("rg_alternativas", String.valueOf(rg_alternativas.getChildCount()));
+
         for (int i = 0; i < rg_alternativas.getChildCount(); i++) {
             RadioButton rb_alternativa = (RadioButton)rg_alternativas.getChildAt(i);
+            rb_alternativa.setId(i+1);
             rb_alternativa.setText(pergunta.alternativas.get(i));
         }
     }
@@ -75,8 +77,10 @@ public class PerguntasActivity extends AppCompatActivity {
 
         //salva resposta
         RadioGroup rg_alternativas = (RadioGroup) findViewById(R.id.rg_alternativas);
-        respostasJogador.add(rg_alternativas.getCheckedRadioButtonId());
-        Log.i("CheckedRadioButtonId", String.valueOf(rg_alternativas.getCheckedRadioButtonId()));
+        respostasJogador.add(
+                rg_alternativas.getCheckedRadioButtonId());
+        Log.i("CheckedRadioButtonId",
+                String.valueOf(rg_alternativas.getCheckedRadioButtonId()));
         if(respostasJogador.size() != perguntas.size()){
             mostrarNovaPergunta();
         }else{
