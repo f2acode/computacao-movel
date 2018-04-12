@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="app_titulo">App título</string>
+    <string name="jogar">Jogar</string>
+    <string name="tv_insira_nome">Insira seu nome:</string>
+    <string name="fim_jogo">Fim de jogo</string>
+    <string name="voltar">Voltar ao menu principal</string>
+    <string name="sobre">Sobre</string>
+    <string name="info">Desenvolvedor: \nFelipe Augusto de Almeida \n\nRA: 20417054</string>
+    <string-array name="perguntas">
+        <item>Quem foi o autor do milésimo gol do Corinthians em campeonatos Brasileiros?</item>
+        <item>Qual o ano do primeiro título Brasileiro do Corinthians?</item>
+        <item>Quem é o maior artilheiro da história do Corinthians?</item>
+        <item>Na semifinal do Campeonato Brasileiro de 1999, o Corinthians ganhou do São Paulo por 3 à 2, graças ao o goleiro Dida, que naquela noite defendeu dois pênaltis, que jogador cobrou (e perdeu) ambas penalidades?</item>
+        <item>Qual o treinador que mais vezes comandou o Corinthians (20/10/2016)?</item>
+        <item>Dentre os inúmeros grandes zagueiros que já vestiram a camisa corintiana, alguns se destacaram pelos gols marcados, dentre estes, qual o maior "Zagueiro-Artilheiro" da história do Corinthians?</item>
+        <item>Qual é o jogador com o maior número de partidas disputadas pelo Corinthians?</item>
+        <item>Quem foi o autor do gol da final do Mundial de 2012?</item>
+        <item>No ano de 2002 o Corinthians sagrou-se campeão da Copa do Brasil, qual time disputou a final contra o Timão?</item>
+        <item>Em quais anos o Corinthians sagrou-se campeão Brasileiro da Série A?</item>
+    </string-array>
+
+    <integer-array name="respostas">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>1</item>
+        <item>3</item>
+
+        <item>2</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+    </integer-array>
+
+    <string-array name="alternativas">
+        <item>Jorge Wágner</item>
+        <item>Gil</item>
+        <item>Liédson</item>
+        <item>Leandro</item>
+
+        <item>1998</item>
+        <item>1995</item>
+        <item>1990</item>
+        <item>1991</item>
+
+        <item>Flávio "Minuano"</item>
+        <item>Baltazar</item>
+        <item>Marcelinho Carioca</item>
+        <item>Cláudio</item>
+
+        <item>Raí</item>
+        <item>Marcelinho Paraíba</item>
+        <item>França</item>
+        <item>Rogério Ceni</item>
+
+        <item>Tite</item>
+        <item>Mano Menezes</item>
+        <item>Oswaldo Brandão</item>
+        <item>Luxemburgo</item>
+
+        <item>Chicão</item>
+        <item>Grané</item>
+        <item>Célio Silva</item>
+        <item>Henrique</item>
+
+        <item>Rivelino</item>
+        <item>Marcelinho Carioca</item>
+        <item>Ronaldo</item>
+        <item>Wladimir</item>
+
+        <item>Jorge Henrique</item>
+        <item>Chicão</item>
+        <item>Guerrero</item>
+        <item>Danilo</item>
+
+        <item>Santo André</item>
+        <item>Brasiliense</item>
+        <item>Paulista de Jundiaí</item>
+        <item>Brasil de Pelotas</item>
+
+        <item>1990, 1995, 1998, 1999, 2005 e 2011.</item>
+        <item>1990, 1998, 1999, 2005, 2011 e 2015.</item>
+        <item>1990, 1995, 1998, 1999, 2005, 2015.</item>
+        <item>1990, 1998, 1999, 2005, 2012 e 2015.</item>
+
+    </string-array>
+    <string name="proxima_questao">Próxima questão</string>
+</resources>
