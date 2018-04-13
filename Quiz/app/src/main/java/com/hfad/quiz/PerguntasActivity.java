@@ -49,7 +49,7 @@ public class PerguntasActivity extends AppCompatActivity {
             PerguntaModel pergunta = new PerguntaModel();
             pergunta.texto = textosPerguntas.get(i);
             pergunta.repostaCerta = respostasCertas.get(0)[i];
-            pergunta.alternativas = alternativas.subList(perguntas.size(), perguntas.size() + 4);
+            pergunta.alternativas = alternativas.subList(perguntas.size() * 4, (perguntas.size() * 4)+4);
 
             perguntas.add(pergunta);
         }
@@ -64,7 +64,6 @@ public class PerguntasActivity extends AppCompatActivity {
 
         // inserindo o texto para as alternativas
         RadioGroup rg_alternativas = (RadioGroup) findViewById(R.id.rg_alternativas);
-        Log.i("rg_alternativas", String.valueOf(rg_alternativas.getChildCount()));
 
         for (int i = 0; i < rg_alternativas.getChildCount(); i++) {
             RadioButton rb_alternativa = (RadioButton)rg_alternativas.getChildAt(i);
@@ -79,8 +78,7 @@ public class PerguntasActivity extends AppCompatActivity {
         RadioGroup rg_alternativas = (RadioGroup) findViewById(R.id.rg_alternativas);
         respostasJogador.add(
                 rg_alternativas.getCheckedRadioButtonId());
-        Log.i("CheckedRadioButtonId",
-                String.valueOf(rg_alternativas.getCheckedRadioButtonId()));
+
         if(respostasJogador.size() != perguntas.size()){
             mostrarNovaPergunta();
         }else{
