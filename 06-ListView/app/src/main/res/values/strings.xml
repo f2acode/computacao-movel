@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">06-ListView</string>
+    <string name="botao1">Exemplo 1</string>
+    <string name="botao2">Exemplo 2</string>
+    <string-array name="itens">
+        <item>Item 1 da lista</item>
+        <item>Item 2 da lista</item>
+        <item>Item 3 da lista</item>
+        <item>Item 4 da lista</item>
+        <item>Item 5 da lista</item>
+    </string-array>
+</resources>
